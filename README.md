@@ -133,3 +133,13 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para d
 ---
 
 ⭐ **Se este projeto foi útil para você, considere dar uma estrela!**
+
+
+## 📋 Descrição
+
+Descreva aqui o conteúdo desta seção.
+
+
+## 💻 Uso
+
+Descreva aqui o conteúdo desta seção.
