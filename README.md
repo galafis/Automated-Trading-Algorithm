@@ -128,6 +128,19 @@ Este projeto é um algoritmo de trading automatizado com gerenciamento de risco 
 - **Backtesting de Estratégias:** Simula estratégias de negociação para avaliar a lucratividade.
 - **Visualização de Dados Financeiros:** Gera gráficos e heatmaps perspicazes.
 
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-3399FF?style=for-the-badge&logo=seaborn&logoColor=white)](https://seaborn.pydata.org/)
+[![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](./LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=yellow)](https://github.com/galafis/Automated-Trading-Algorithm/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=blue)](https://github.com/galafis/Automated-Trading-Algorithm/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=red)](https://github.com/galafis/Automated-Trading-Algorithm/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=green)](https://github.com/galafis/Automated-Trading-Algorithm/pulls)
+
+
 ### 🏃‍♂️ Início Rápido
 
 ```bash
