@@ -8,6 +8,7 @@
 [![GitHub Forks](https://img.shields.io/github/forks/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=blue)](https://github.com/galafis/Automated-Trading-Algorithm/network/members)
 [![GitHub Issues](https://img.shields.io/github/issues/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=red)](https://github.com/galafis/Automated-Trading-Algorithm/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=green)](https://github.com/galafis/Automated-Trading-Algorithm/pulls)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Live_Demo-blue?style=for-the-badge&logo=github)](https://galafis.github.io/Automated-Trading-Algorithm/)
 
 ---
 
@@ -15,7 +16,7 @@
 
 ### 🚀 Overview
 
-This project is an intelligent automated trading algorithm with risk management and market analysis capabilities. It demonstrates professional Python development skills, incorporating modern best practices, a clean code architecture, and industry-standard implementations. The algorithm is designed to analyze financial data, generate trading signals, and backtest strategies to evaluate performance.
+This project is an automated trading algorithm with risk management and market analysis capabilities. It demonstrates professional Python development skills, incorporating modern best practices, a clean code architecture, and industry-standard implementations. The algorithm is designed to analyze financial data, generate trading signals, and backtest strategies to evaluate performance.
 
 ### 🛠️ Technology Stack
 
@@ -86,6 +87,8 @@ Automated-Trading-Algorithm/
 
 ![Analysis Visualization](docs/img/automated_trading_algorithm_analysis.png)
 
+O algoritmo gera automaticamente visualizações de análise de dados, como mapas de calor de correlação, distribuições de características e importância de características, que são salvas em `docs/img/automated_trading_algorithm_analysis.png` após a execução.
+
 ### 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request or open an issue.
@@ -96,11 +99,23 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
+## GitHub Pages
+
+An interactive demonstration of this project is available via GitHub Pages. You can access it <a href="https://galafis.github.io/Automated-Trading-Algorithm/">here</a>.
+
+---
+
+## GitHub Pages
+
+Uma demonstração interativa deste projeto está disponível via GitHub Pages. Você pode acessá-la <a href="https://galafis.github.io/Automated-Trading-Algorithm/">aqui</a>.
+
+---
+
 ## Português
 
 ### 🚀 Visão Geral
 
-Este projeto é um algoritmo de trading automatizado inteligente com gerenciamento de risco e análise de mercado. Ele demonstra habilidades de desenvolvimento profissional em Python, incorporando as melhores práticas modernas, uma arquitetura de código limpa e implementações padrão da indústria. O algoritmo foi projetado para analisar dados financeiros, gerar sinais de negociação e realizar backtesting de estratégias para avaliar o desempenho.
+Este projeto é um algoritmo de trading automatizado com gerenciamento de risco e análise de mercado. Ele demonstra habilidades de desenvolvimento profissional em Python, incorporando as melhores práticas modernas, uma arquitetura de código limpa e implementações padrão da indústria. O algoritmo foi projetado para analisar dados financeiros, gerar sinais de negociação e realizar backtesting de estratégias para avaliar o desempenho.
 
 ### 🛠️ Stack Tecnológica
 
@@ -178,6 +193,12 @@ Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request
 ### 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+
+## GitHub Pages
+
+Uma demonstração interativa deste projeto está disponível via GitHub Pages. Você pode acessá-la <a href="https://galafis.github.io/Automated-Trading-Algorithm/">aqui</a>.
 
 ### 👨‍💻 Autor
 

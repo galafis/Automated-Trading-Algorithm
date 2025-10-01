@@ -1,7 +1,7 @@
 
 """
 Automated-Trading-Algorithm - Professional Python Implementation
-Advanced Trading for data science and AI
+Advanced Trading for data science
 """
 
 import numpy as np
