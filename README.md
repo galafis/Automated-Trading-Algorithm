@@ -1,22 +1,37 @@
+> GABRIEL DEMETRIOS LAFIS
+
 # Automated-Trading-Algorithm
+
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](./LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=yellow)](https://github.com/galafis/Automated-Trading-Algorithm/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=blue)](https://github.com/galafis/Automated-Trading-Algorithm/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=red)](https://github.com/galafis/Automated-Trading-Algorithm/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=green)](https://github.com/galafis/Automated-Trading-Algorithm/pulls)
+
+---
 
 ## English
 
 ### 🚀 Overview
-Intelligent automated trading algorithm with risk management and market analysis
 
-This project demonstrates professional Python development skills with modern best practices, clean code architecture, and industry-standard implementations.
+This project is an intelligent automated trading algorithm with risk management and market analysis capabilities. It demonstrates professional Python development skills, incorporating modern best practices, a clean code architecture, and industry-standard implementations. The algorithm is designed to analyze financial data, generate trading signals, and backtest strategies to evaluate performance.
 
 ### 🛠️ Technology Stack
-Python, pandas, numpy, ccxt, Trading APIs, Financial Analysis
+
+- **Python:** Core programming language.
+- **Pandas:** Data manipulation and analysis.
+- **NumPy:** Numerical operations.
+- **Scikit-learn:** Machine learning for model training and evaluation.
+- **Matplotlib & Seaborn:** Data visualization.
 
 ### ⚡ Features
-- Professional code architecture
-- Modern development practices
-- Comprehensive error handling
-- Performance optimized
-- Well-documented codebase
-- Industry-standard patterns
+
+- **Professional Code Architecture:** Organized and modular codebase.
+- **Modern Development Practices:** Clean, efficient, and well-documented code.
+- **Trading Signal Generation:** Creates buy/sell signals based on data analysis.
+- **Strategy Backtesting:** Simulates trading strategies to assess profitability.
+- **Financial Data Visualization:** Generates insightful charts and heatmaps.
 
 ### 🏃‍♂️ Quick Start
 
@@ -24,71 +39,84 @@ Python, pandas, numpy, ccxt, Trading APIs, Financial Analysis
 # Clone the repository
 git clone https://github.com/galafis/Automated-Trading-Algorithm.git
 
-# Navigate to project directory
+# Navigate to the project directory
 cd Automated-Trading-Algorithm
 
-# Follow language-specific setup instructions below
-```
-
-### 📦 Installation & Setup
-
-```bash
 # Install dependencies
-pip install -r requirements.txt
+pip install -r src/requirements.txt
 
 # Run the application
-python main.py
+python src/main.py
 ```
 
 ### 🎯 Use Cases
-- Professional development portfolio
-- Learning modern Python practices
-- Code reference and examples
-- Enterprise-grade implementations
+
+- **Portfolio Project:** Showcase advanced Python and data science skills.
+- **Learning Tool:** Understand algorithmic trading and modern development practices.
+- **Code Reference:** A guide for building enterprise-grade financial applications.
 
 ### 📊 Project Structure
+
 ```
 Automated-Trading-Algorithm/
 ├── README.md
 ├── LICENSE
-├── main.py
-├── requirements.txt
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
 ├── src/
+│   ├── main.py
+│   └── requirements.txt
 ├── tests/
-└── docs/
+│   └── test_main.py
+├── docs/
+│   └── img/
+│       ├── flowchart.png
+│       └── automated_trading_algorithm_analysis.png
+├── config/
+└── frontend/
 ```
 
+### 📈 Diagrams
+
+#### Algorithm Flowchart
+
+![Algorithm Flowchart](docs/img/flowchart.png)
+
+#### Analysis Visualization
+
+![Analysis Visualization](docs/img/automated_trading_algorithm_analysis.png)
+
 ### 🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
+
+Contributions are welcome! Please feel free to submit a Pull Request or open an issue.
 
 ### 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-### 👨‍💻 Author
-**Gabriel Demetrios Lafis**
-- Data Scientist & Engineer
-- Systems Developer & Analyst
-- Cybersecurity Specialist
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## Português
 
 ### 🚀 Visão Geral
-Intelligent automated trading algorithm with risk management and market analysis
 
-Este projeto demonstra habilidades profissionais de desenvolvimento em Python com práticas modernas, arquitetura de código limpo e implementações padrão da indústria.
+Este projeto é um algoritmo de trading automatizado inteligente com gerenciamento de risco e análise de mercado. Ele demonstra habilidades de desenvolvimento profissional em Python, incorporando as melhores práticas modernas, uma arquitetura de código limpa e implementações padrão da indústria. O algoritmo foi projetado para analisar dados financeiros, gerar sinais de negociação e realizar backtesting de estratégias para avaliar o desempenho.
 
 ### 🛠️ Stack Tecnológica
-Python, pandas, numpy, ccxt, Trading APIs, Financial Analysis
+
+- **Python:** Linguagem de programação principal.
+- **Pandas:** Manipulação e análise de dados.
+- **NumPy:** Operações numéricas.
+- **Scikit-learn:** Machine learning para treinamento e avaliação de modelos.
+- **Matplotlib & Seaborn:** Visualização de dados.
 
 ### ⚡ Funcionalidades
-- Arquitetura de código profissional
-- Práticas modernas de desenvolvimento
-- Tratamento abrangente de erros
-- Otimizado para performance
-- Base de código bem documentada
-- Padrões da indústria
+
+- **Arquitetura de Código Profissional:** Código-base organizado e modular.
+- **Práticas Modernas de Desenvolvimento:** Código limpo, eficiente e bem documentado.
+- **Geração de Sinais de Negociação:** Cria sinais de compra/venda com base na análise de dados.
+- **Backtesting de Estratégias:** Simula estratégias de negociação para avaliar a lucratividade.
+- **Visualização de Dados Financeiros:** Gera gráficos e heatmaps perspicazes.
 
 ### 🏃‍♂️ Início Rápido
 
@@ -99,32 +127,60 @@ git clone https://github.com/galafis/Automated-Trading-Algorithm.git
 # Navegue para o diretório do projeto
 cd Automated-Trading-Algorithm
 
-# Siga as instruções de configuração específicas da linguagem abaixo
-```
-
-### 📦 Instalação e Configuração
-
-```bash
 # Instale as dependências
-pip install -r requirements.txt
+pip install -r src/requirements.txt
 
 # Execute a aplicação
-python main.py
+python src/main.py
 ```
 
 ### 🎯 Casos de Uso
-- Portfólio de desenvolvimento profissional
-- Aprendizado de práticas modernas em Python
-- Referência de código e exemplos
-- Implementações de nível empresarial
+
+- **Projeto de Portfólio:** Demonstrar habilidades avançadas em Python e ciência de dados.
+- **Ferramenta de Aprendizagem:** Compreender o trading algorítmico e as práticas modernas de desenvolvimento.
+- **Referência de Código:** Um guia para construir aplicações financeiras de nível empresarial.
+
+### 📊 Estrutura do Projeto
+
+```
+Automated-Trading-Algorithm/
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── src/
+│   ├── main.py
+│   └── requirements.txt
+├── tests/
+│   └── test_main.py
+├── docs/
+│   └── img/
+│       ├── flowchart.png
+│       └── automated_trading_algorithm_analysis.png
+├── config/
+└── frontend/
+```
+
+### 📈 Diagramas
+
+#### Fluxo do Algoritmo
+
+![Fluxo do Algoritmo](docs/img/flowchart.png)
+
+#### Visualização da Análise
+
+![Visualização da Análise](docs/img/automated_trading_algorithm_analysis.png)
 
 ### 🤝 Contribuindo
-Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request.
+
+Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request ou abrir uma issue.
 
 ### 📄 Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
 
 ### 👨‍💻 Autor
+
 **Gabriel Demetrios Lafis**
 - Cientista e Engenheiro de Dados
 - Desenvolvedor e Analista de Sistemas
@@ -134,12 +190,3 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para d
 
 ⭐ **Se este projeto foi útil para você, considere dar uma estrela!**
 
-
-## 📋 Descrição
-
-Descreva aqui o conteúdo desta seção.
-
-
-## 💻 Uso
-
-Descreva aqui o conteúdo desta seção.
