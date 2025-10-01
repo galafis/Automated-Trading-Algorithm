@@ -1,13 +1,16 @@
 ```mermaid
 graph TD
-    A[Iniciar] --> B{Carregar Dados?}
-    B -- Sim --> C[Gerar Dados de Exemplo]
-    B -- Não --> D[Carregar Dados Fornecidos]
-    C --> E[Analisar Dados]
-    D --> E
-    E --> F[Treinar Modelo ML]
-    F --> G[Gerar Sinais de Negociação]
-    G --> H[Backtest da Estratégia]
-    H --> I[Visualizar Resultados]
-    I --> J[Concluir Análise]
+    A[Início] --> B{TradingAnalyzer Instanciado}
+    B --> C[Carregar Dados]
+    C --> D{Dados Carregados?}
+    D -- Sim --> E[Treinar Modelo ML]
+    D -- Não --> C
+    E --> F{Modelo Treinado?}
+    F -- Sim --> G[Gerar Sinais de Trading]
+    F -- Não --> E
+    G --> H{Sinais Gerados?}
+    H -- Sim --> I[Backtest da Estratégia]
+    H -- Não --> G
+    I --> J[Gerar Visualizações]
+    J --> K[Fim]
 ```

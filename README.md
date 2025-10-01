@@ -1,8 +1,15 @@
-> GABRIEL DEMETRIOS LAFIS
-
 # Automated-Trading-Algorithm
 
+> GABRIEL DEMETRIOS LAFIS
+
+![Hero Image](docs/img/hero_image.png)
+
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-3399FF?style=for-the-badge&logo=seaborn&logoColor=white)](https://seaborn.pydata.org/)
+[![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](./LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=yellow)](https://github.com/galafis/Automated-Trading-Algorithm/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=blue)](https://github.com/galafis/Automated-Trading-Algorithm/network/members)
@@ -70,11 +77,13 @@ Automated-Trading-Algorithm/
 ├── tests/
 │   └── test_main.py
 ├── docs/
+│   ├── flowchart.md
+│   ├── index.html
 │   └── img/
 │       ├── flowchart.png
-│       └── automated_trading_algorithm_analysis.png
-├── config/
-└── frontend/
+│       ├── automated_trading_algorithm_analysis.png
+│       └── hero_image.png
+└── config/
 ```
 
 ### 📈 Diagrams
@@ -87,8 +96,6 @@ Automated-Trading-Algorithm/
 
 ![Analysis Visualization](docs/img/automated_trading_algorithm_analysis.png)
 
-O algoritmo gera automaticamente visualizações de análise de dados, como mapas de calor de correlação, distribuições de características e importância de características, que são salvas em `docs/img/automated_trading_algorithm_analysis.png` após a execução.
-
 ### 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request or open an issue.
@@ -96,18 +103,6 @@ Contributions are welcome! Please feel free to submit a Pull Request or open an 
 ### 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## GitHub Pages
-
-An interactive demonstration of this project is available via GitHub Pages. You can access it <a href="https://galafis.github.io/Automated-Trading-Algorithm/">here</a>.
-
----
-
-## GitHub Pages
-
-Uma demonstração interativa deste projeto está disponível via GitHub Pages. Você pode acessá-la <a href="https://galafis.github.io/Automated-Trading-Algorithm/">aqui</a>.
 
 ---
 
@@ -169,11 +164,13 @@ Automated-Trading-Algorithm/
 ├── tests/
 │   └── test_main.py
 ├── docs/
+│   ├── flowchart.md
+│   ├── index.html
 │   └── img/
 │       ├── flowchart.png
-│       └── automated_trading_algorithm_analysis.png
-├── config/
-└── frontend/
+│       ├── automated_trading_algorithm_analysis.png
+│       └── hero_image.png
+└── config/
 ```
 
 ### 📈 Diagramas
@@ -210,4 +207,3 @@ Uma demonstração interativa deste projeto está disponível via GitHub Pages. 
 ---
 
 ⭐ **Se este projeto foi útil para você, considere dar uma estrela!**
-
