@@ -17,10 +17,24 @@ Total source lines: **499** across **5** files in **2** languages.
 
 ### ✨ Key Features
 
+<<<<<<< HEAD
 - **Production-Ready Architecture**: Modular, well-documented, and following best practices
 - **Comprehensive Implementation**: Complete solution with all core functionality
 - **Clean Code**: Type-safe, well-tested, and maintainable codebase
 - **Easy Deployment**: Docker support for quick setup and deployment
+=======
+[![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-3399FF?style=for-the-badge&logo=seaborn&logoColor=white)](https://seaborn.pydata.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](./LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=yellow)](https://github.com/galafis/Automated-Trading-Algorithm/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=blue)](https://github.com/galafis/Automated-Trading-Algorithm/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=red)](https://github.com/galafis/Automated-Trading-Algorithm/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/galafis/Automated-Trading-Algorithm?style=for-the-badge&color=green)](https://github.com/galafis/Automated-Trading-Algorithm/pulls)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Live_Demo-blue?style=for-the-badge&logo=github)](https://galafis.github.io/Automated-Trading-Algorithm/)
+>>>>>>> 734b70310e2f389fcea03d483c398c0f5cc9ae77
 
 ### 🚀 Quick Start
 
