@@ -61,6 +61,20 @@ pytest tests/ -v
 
 Os testes usam dados sinteticos deterministicos (sem acesso a rede).
 
+### Arquitetura
+
+```mermaid
+graph TD
+    A["main()"] --> B["load_market_data()<br/>Download yfinance"]
+    B --> C["build_features()"]
+    C --> D["SMA, RSI, MACD<br/>Retorno, Volatilidade"]
+    C --> E["Target: direcao dia seguinte"]
+    C --> F["train_model()<br/>RandomForestClassifier"]
+    F --> G["Split Temporal 80/20"]
+    F --> H["backtest()<br/>Estrategia Long-only"]
+    H --> I["plot_results()<br/>matplotlib"]
+```
+
 ### Estrutura do Projeto
 
 ```
@@ -139,6 +153,20 @@ pytest tests/ -v
 ```
 
 Tests use synthetic deterministic data (no network access).
+
+### Architecture
+
+```mermaid
+graph TD
+    A["main()"] --> B["load_market_data()<br/>yfinance Download"]
+    B --> C["build_features()"]
+    C --> D["SMA, RSI, MACD<br/>Return, Volatility"]
+    C --> E["Target: next-day direction"]
+    C --> F["train_model()<br/>RandomForestClassifier"]
+    F --> G["Temporal 80/20 Split"]
+    F --> H["backtest()<br/>Long-only Strategy"]
+    H --> I["plot_results()<br/>matplotlib"]
+```
 
 ### Project Structure
 
