@@ -1,325 +1,180 @@
-# 📈 Automated Trading Algorithm
+# Automated Trading Algorithm
 
-> Professional repository showcasing advanced development skills
+Algoritmo de trading automatizado com aprendizado de maquina, usando dados reais de mercado.
 
-[![Python](https://img.shields.io/badge/Python-3.12-3776AB.svg)](https://img.shields.io/badge/)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://img.shields.io/badge/)
+Automated trading algorithm with machine learning, using real market data.
+
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-[English](#english) | [Português](#português)
+[Portugues](#portugues) | [English](#english)
+
+---
+
+## Portugues
+
+### Visao Geral
+
+Projeto de estudo que demonstra um pipeline completo de trading quantitativo:
+
+1. **Coleta de dados** -- baixa dados OHLCV historicos via yfinance
+2. **Engenharia de features** -- calcula indicadores tecnicos (SMA, RSI, MACD, volatilidade, retorno diario)
+3. **Modelo de ML** -- treina um RandomForestClassifier para prever direcao do preco (alta/baixa) usando split temporal (sem data leakage)
+4. **Backtest** -- simula estrategia long-only baseada nos sinais do modelo e calcula retornos cumulativos
+5. **Visualizacao** -- gera grafico de equity curve (estrategia vs buy & hold) e importancia de features
+
+### O que este projeto NAO e
+
+- Nao e um sistema de trading de producao
+- Nao inclui custos de transacao, slippage ou gerenciamento de risco real
+- Nao e conselho financeiro
+
+### Como usar
+
+```bash
+# Clonar o repositorio
+git clone https://github.com/galafis/Automated-Trading-Algorithm.git
+cd Automated-Trading-Algorithm
+
+# Criar ambiente virtual
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Executar o pipeline completo (padrao: AAPL, 5 anos)
+python src/main.py
+```
+
+Para usar outro ticker, edite a chamada `main()` em `src/main.py`:
+
+```python
+main(ticker="PETR4.SA", period="3y")
+```
+
+### Testes
+
+```bash
+pytest tests/ -v
+```
+
+Os testes usam dados sinteticos deterministicos (sem acesso a rede).
+
+### Estrutura do Projeto
+
+```
+Automated-Trading-Algorithm/
+├── src/
+│   ├── __init__.py
+│   └── main.py           # Pipeline completo: dados, features, modelo, backtest, plot
+├── tests/
+│   ├── __init__.py
+│   └── test_main.py      # 17 testes funcionais
+├── docs/
+│   └── img/              # Graficos gerados pelo pipeline
+├── requirements.txt
+├── LICENSE
+└── README.md
+```
+
+### Stack Tecnologica
+
+| Tecnologia | Uso |
+|---|---|
+| Python | Linguagem principal |
+| pandas / NumPy | Manipulacao de dados e calculos numericos |
+| scikit-learn | RandomForestClassifier para previsao de direcao |
+| yfinance | Download de dados OHLCV do Yahoo Finance |
+| matplotlib | Visualizacao de resultados |
 
 ---
 
 ## English
 
-### 🎯 Overview
+### Overview
 
-**Automated Trading Algorithm** is a production-grade Python application complemented by HTML that showcases modern software engineering practices including clean architecture, comprehensive testing, containerized deployment, and CI/CD readiness.
+Study project demonstrating a complete quantitative trading pipeline:
 
-The codebase comprises **499 lines** of source code organized across **5 modules**, following industry best practices for maintainability, scalability, and code quality.
+1. **Data collection** -- downloads historical OHLCV data via yfinance
+2. **Feature engineering** -- computes technical indicators (SMA, RSI, MACD, volatility, daily return)
+3. **ML model** -- trains a RandomForestClassifier to predict price direction (up/down) using temporal split (no data leakage)
+4. **Backtest** -- simulates a long-only strategy based on model signals and computes cumulative returns
+5. **Visualization** -- generates equity curve chart (strategy vs buy & hold) and feature importances
 
-### ✨ Key Features
+### What this project is NOT
 
-- **📈 Strategy Engine**: Multiple trading strategy implementations with configurable parameters
-- **🔄 Backtesting Framework**: Historical data simulation with realistic market conditions
-- **📊 Performance Analytics**: Sharpe ratio, Sortino ratio, maximum drawdown, and more
-- **⚡ Real-time Processing**: Low-latency data processing optimized for market speed
-- **🐳 Containerized**: Docker support for consistent deployment
-- **🏗️ Object-Oriented**: 2 core classes with clean architecture
+- Not a production trading system
+- Does not include transaction costs, slippage, or real risk management
+- Not financial advice
 
-### 🏗️ Architecture
-
-```mermaid
-graph TB
-    subgraph Data["📊 Market Data"]
-        A[Data Feed]
-        B[Historical Data]
-    end
-    
-    subgraph Engine["⚙️ Analysis Engine"]
-        C[Signal Generation]
-        D[Strategy Logic]
-        E[Risk Assessment]
-    end
-    
-    subgraph Output["📈 Output"]
-        F[Performance Metrics]
-        G[Trade Signals]
-        H[Reports]
-    end
-    
-    A --> C
-    B --> C
-    C --> D --> E
-    E --> F
-    D --> G
-    E --> H
-    
-    style Data fill:#e1f5fe
-    style Engine fill:#f3e5f5
-    style Output fill:#e8f5e9
-```
-
-### 🚀 Quick Start
-
-#### Prerequisites
-
-- Python 3.12+
-- pip (Python package manager)
-
-#### Installation
+### Usage
 
 ```bash
 # Clone the repository
 git clone https://github.com/galafis/Automated-Trading-Algorithm.git
 cd Automated-Trading-Algorithm
 
-# Create and activate virtual environment
+# Create virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
-```
 
-#### Running
-
-```bash
-# Run the application
+# Run the full pipeline (default: AAPL, 5 years)
 python src/main.py
 ```
 
-### 🧪 Testing
+To use a different ticker, edit the `main()` call in `src/main.py`:
 
-```bash
-# Run all tests
-pytest
-
-# Run with coverage report
-pytest --cov --cov-report=html
-
-# Run specific test module
-pytest tests/test_main.py -v
-
-# Run with detailed output
-pytest -v --tb=short
+```python
+main(ticker="MSFT", period="3y")
 ```
 
-### 📁 Project Structure
+### Tests
+
+```bash
+pytest tests/ -v
+```
+
+Tests use synthetic deterministic data (no network access).
+
+### Project Structure
 
 ```
 Automated-Trading-Algorithm/
-├── docs/          # Documentation
-│   ├── img/
-│   └── flowchart.md
-├── src/          # Source code
+├── src/
 │   ├── __init__.py
-│   ├── main.py
-│   └── requirements.txt
-├── tests/         # Test suite
+│   └── main.py           # Full pipeline: data, features, model, backtest, plot
+├── tests/
 │   ├── __init__.py
-│   └── test_main.py
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── Dockerfile
+│   └── test_main.py      # 17 functional tests
+├── docs/
+│   └── img/              # Charts generated by the pipeline
+├── requirements.txt
 ├── LICENSE
 └── README.md
 ```
 
-### 📊 Performance Metrics
+### Tech Stack
 
-The engine calculates comprehensive performance metrics:
-
-| Metric | Description | Formula |
-|--------|-------------|---------|
-| **Sharpe Ratio** | Risk-adjusted return | (Rp - Rf) / σp |
-| **Sortino Ratio** | Downside risk-adjusted return | (Rp - Rf) / σd |
-| **Max Drawdown** | Maximum peak-to-trough decline | max(1 - Pt/Pmax) |
-| **Win Rate** | Percentage of profitable trades | Wins / Total |
-| **Profit Factor** | Gross profit / Gross loss | ΣProfit / ΣLoss |
-| **Calmar Ratio** | Return / Max Drawdown | CAGR / MDD |
-| **VaR (95%)** | Value at Risk | 5th percentile of returns |
-| **Expected Shortfall** | Conditional VaR | E[R | R < VaR] |
-
-### 🛠️ Tech Stack
-
-| Technology | Description | Role |
-|------------|-------------|------|
-| **Python** | Core Language | Primary |
-| **Docker** | Containerization platform | Framework |
-| HTML | 1 files | Supporting |
-
-### 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-### 👤 Author
-
-**Gabriel Demetrios Lafis**
-- GitHub: [@galafis](https://github.com/galafis)
-- LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
+| Technology | Usage |
+|---|---|
+| Python | Core language |
+| pandas / NumPy | Data manipulation and numerical computation |
+| scikit-learn | RandomForestClassifier for direction prediction |
+| yfinance | OHLCV data download from Yahoo Finance |
+| matplotlib | Results visualization |
 
 ---
 
-## Português
-
-### 🎯 Visão Geral
-
-**Automated Trading Algorithm** é uma aplicação Python de nível profissional, complementada por HTML que demonstra práticas modernas de engenharia de software, incluindo arquitetura limpa, testes abrangentes, implantação containerizada e prontidão para CI/CD.
-
-A base de código compreende **499 linhas** de código-fonte organizadas em **5 módulos**, seguindo as melhores práticas do setor para manutenibilidade, escalabilidade e qualidade de código.
-
-### ✨ Funcionalidades Principais
-
-- **📈 Strategy Engine**: Multiple trading strategy implementations with configurable parameters
-- **🔄 Backtesting Framework**: Historical data simulation with realistic market conditions
-- **📊 Performance Analytics**: Sharpe ratio, Sortino ratio, maximum drawdown, and more
-- **⚡ Real-time Processing**: Low-latency data processing optimized for market speed
-- **🐳 Containerized**: Docker support for consistent deployment
-- **🏗️ Object-Oriented**: 2 core classes with clean architecture
-
-### 🏗️ Arquitetura
-
-```mermaid
-graph TB
-    subgraph Data["📊 Market Data"]
-        A[Data Feed]
-        B[Historical Data]
-    end
-    
-    subgraph Engine["⚙️ Analysis Engine"]
-        C[Signal Generation]
-        D[Strategy Logic]
-        E[Risk Assessment]
-    end
-    
-    subgraph Output["📈 Output"]
-        F[Performance Metrics]
-        G[Trade Signals]
-        H[Reports]
-    end
-    
-    A --> C
-    B --> C
-    C --> D --> E
-    E --> F
-    D --> G
-    E --> H
-    
-    style Data fill:#e1f5fe
-    style Engine fill:#f3e5f5
-    style Output fill:#e8f5e9
-```
-
-### 🚀 Início Rápido
-
-#### Prerequisites
-
-- Python 3.12+
-- pip (Python package manager)
-
-#### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/galafis/Automated-Trading-Algorithm.git
-cd Automated-Trading-Algorithm
-
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-#### Running
-
-```bash
-# Run the application
-python src/main.py
-```
-
-### 🧪 Testing
-
-```bash
-# Run all tests
-pytest
-
-# Run with coverage report
-pytest --cov --cov-report=html
-
-# Run specific test module
-pytest tests/test_main.py -v
-
-# Run with detailed output
-pytest -v --tb=short
-```
-
-### 📁 Estrutura do Projeto
-
-```
-Automated-Trading-Algorithm/
-├── docs/          # Documentation
-│   ├── img/
-│   └── flowchart.md
-├── src/          # Source code
-│   ├── __init__.py
-│   ├── main.py
-│   └── requirements.txt
-├── tests/         # Test suite
-│   ├── __init__.py
-│   └── test_main.py
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── Dockerfile
-├── LICENSE
-└── README.md
-```
-
-### 📊 Performance Metrics
-
-The engine calculates comprehensive performance metrics:
-
-| Metric | Description | Formula |
-|--------|-------------|---------|
-| **Sharpe Ratio** | Risk-adjusted return | (Rp - Rf) / σp |
-| **Sortino Ratio** | Downside risk-adjusted return | (Rp - Rf) / σd |
-| **Max Drawdown** | Maximum peak-to-trough decline | max(1 - Pt/Pmax) |
-| **Win Rate** | Percentage of profitable trades | Wins / Total |
-| **Profit Factor** | Gross profit / Gross loss | ΣProfit / ΣLoss |
-| **Calmar Ratio** | Return / Max Drawdown | CAGR / MDD |
-| **VaR (95%)** | Value at Risk | 5th percentile of returns |
-| **Expected Shortfall** | Conditional VaR | E[R | R < VaR] |
-
-### 🛠️ Stack Tecnológica
-
-| Tecnologia | Descrição | Papel |
-|------------|-----------|-------|
-| **Python** | Core Language | Primary |
-| **Docker** | Containerization platform | Framework |
-| HTML | 1 files | Supporting |
-
-### 🤝 Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request.
-
-### 📄 Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
-
-### 👤 Autor
+### Autor / Author
 
 **Gabriel Demetrios Lafis**
 - GitHub: [@galafis](https://github.com/galafis)
 - LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
+
+### Licenca / License
+
+MIT -- veja [LICENSE](LICENSE).
