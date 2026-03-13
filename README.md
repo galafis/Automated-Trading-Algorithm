@@ -6,6 +6,7 @@ Automated trading algorithm with machine learning, using real market data.
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker)](Dockerfile)
 
 [Portugues](#portugues) | [English](#english)
 
